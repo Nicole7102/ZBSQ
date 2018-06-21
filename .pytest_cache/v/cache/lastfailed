@@ -1,0 +1,4 @@
+{
+  "test_zbsq/test_case/test_loginPage.py::test_EnterPage::test_login": true,
+  "test_zbsq/test_case/test_mapsPage.py": true
+}
