@@ -1,6 +1,6 @@
-»·¾³×¼±¸£º
+ç¯å¢ƒå‡†å¤‡ï¼š
 python3
-pip°²×°selenium£¬¼´¿É
+pipå®‰è£…seleniumï¼Œunittestï¼Œå³å¯
 
-¶à»úÔËĞĞ£º
-ÏÈÆô¶¯java -jar Æô¶¯selenium server
+å¤šæœºè¿è¡Œï¼š
+å…ˆå¯åŠ¨java -jar å¯åŠ¨selenium server
