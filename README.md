@@ -1,1 +1,2 @@
-#ZBSQ
+装备视情项目UI自动化测试脚本
+Python+Selenium+Unittest
