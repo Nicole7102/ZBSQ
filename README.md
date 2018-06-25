@@ -5,7 +5,7 @@
 <li>pip安装selenium，unittest
 <li>浏览器驱动路径(./driver)设置path环境变量
 </ol>
-<p>Grid多机运行
+<p>##Grid多机运行##
 <p>环境要求：
 <ul>
 <li>本地hub主机与远程node主机直接能ping通
