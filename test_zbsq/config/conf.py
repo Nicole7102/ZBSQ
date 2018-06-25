@@ -18,5 +18,5 @@ def driver():
     #                     )
     #     return driver
 
-    driver = webdriver.Firefox()
-
+    driver = webdriver.Chrome()
+    return driver
