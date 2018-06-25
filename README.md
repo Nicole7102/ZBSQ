@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ZBSQ
 环境准备：
 python3
@@ -17,3 +18,7 @@ Grid多机运行：
 2、启动远程node主机(设置端口5555，指向的hub主机IP为192.168.33.86)
 	java -jar selenium-server-standalone-2.48.2.jar -role node -port 5555 -hub http://192.168.33.86:4444/grid/register
 3、修改脚本中driver远程主机的IP及端口运行脚本
+=======
+装备视情项目UI自动化测试脚本
+Python+Selenium+Unittest
+>>>>>>> bfdfa4d776867d82aa3c6c2980d9fc5241e90b22
