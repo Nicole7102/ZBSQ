@@ -1,6 +1,6 @@
 # coding=utf-8
 import unittest
-from ..config.conf import browser
+from ..config.conf import driver
 
 
 def setUpModule():
@@ -20,7 +20,7 @@ class MyUnit(unittest.TestCase):
 
     @ classmethod
     def setUpClass(cls):
-        cls.driver = browser()
+        cls.driver = driver()
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
 

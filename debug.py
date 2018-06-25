@@ -3,25 +3,39 @@ from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 import time
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver import Remote
 
+# def select_click(list,text):
+#     length = len(list)
+#     for i in range(0, length):
+#         print(list[i].text)
+#         if list[i].text == text:
+#             list[i].click()
+#             break
+#         else:
+#             i = i + 1
 
-def select_click(list,text):
-    length = len(list)
-    for i in range(0, length):
-        print(list[i].text)
-        if list[i].text == text:
-            list[i].click()
-            break
-        else:
-            i = i + 1
+# 定义主机与浏览器
+list = {'http://127.0.0.1:4444/wd/hub': 'chrome',
+        'http://192.168.33.90:5555/wd/hub':'chrome'
+        }
 
-
-if __name__=="__main__":
-    driver = webdriver.Chrome()
+for host, browser in list.items():
+    
+    driver = Remote(command_executor=host,
+                    desired_capabilities={'platform': 'ANY',
+                                          'browserName': browser,
+                                          'version': '',
+                                          'javascriptEnabled': True
+                                              }
+                    )
     driver.get("http://192.168.33.90:8080/#/maps")
-    time.sleep(3)
-    driver.find_element_by_css_selector(".statusBox>div:nth-child(2)>span>cite").click()
-    driver.find_element_by_css_selector("#app>div> div.content > section > div.el-dialog__wrapper.quickDialog.dialogTitle > div > div > button > i").click()
+# driver = webdriver.Chrome()
+# driver.get("http://192.168.33.90:8080/#/maps")
+
+    # time.sleep(3)
+    # driver.find_element_by_css_selector(".statusBox>div:nth-child(2)>span>cite").click()
+    # driver.find_element_by_css_selector("#app>div> div.content > section > div.el-dialog__wrapper.quickDialog.dialogTitle > div > div > button > i").click()
     # driver.find_element_by_css_selector("div.statusBox>div.status-top>button>span").click()  # 点击报修按钮
     # time.sleep(5)
     # click_driver = driver.find_element_by_xpath(
