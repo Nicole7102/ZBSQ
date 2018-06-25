@@ -1,11 +1,11 @@
-#装备视情UI自动化测试
+# 装备视情UI自动化测试
 ### 环境准备：
 <ol>
 <li> 安装python3
 <li>pip安装selenium，unittest
 <li>浏览器驱动路径(./driver)设置path环境变量
 </ol>
-***
+******
 ### Grid多机运行：
 环境要求：
 <ul>
